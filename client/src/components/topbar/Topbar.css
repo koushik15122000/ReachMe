@@ -1,0 +1,153 @@
+.topbarContainer{
+    z-index: 999;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #1877f2;
+    position: sticky;
+    top: 0;
+}
+
+.topbarLogo{
+    font-size: 32px;
+    margin-left: 20px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    font-family:Caveat;
+}
+
+
+
+.topbarLeft{
+    flex: 3;
+}
+.topbarCenter{
+    flex: 5;
+    position: relative;
+}
+.topbarCenterClicked{
+    flex: 5;
+    position: relative;
+}
+.searchBarClicked{
+    width: 100%;
+    height: 30px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+.searchBar{
+    width: 100%;
+    height: 30px;
+    border-radius: 30px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+.searchIcon{
+    font-size: 20px !important;
+    margin-left: 20px;
+}
+
+.searchInput{
+    border: none;
+    width: 70%;
+}
+
+.searchInput:focus{
+    outline: none;
+}
+.dataResult{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: auto;
+    max-height: 300px;
+    overflow: hidden;
+    overflow-y: auto;
+    border-bottom-left-radius:15px;
+    border-bottom-right-radius:15px;
+    -webkit-box-shadow: 0px 17px 13px 3px rgba(0,0,0,0.36); 
+    box-shadow: 0px 17px 13px 3px rgba(0,0,0,0.36);
+}
+.dataResult::-webkit-scrollbar {
+    display: none;
+  }
+.dataItem{
+    padding-left: 20px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+.link{
+    color: black;
+    font-size: 15px;
+    font-weight: 400;
+}
+.userImg{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.userUserName{
+    font-size: 15px;
+    font-weight: 400;
+    margin: 0 20px;
+}
+.topbarRight{
+    flex: 4;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+
+.topbarLink{
+    margin-right: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.topbarIcons{
+    display: flex;
+    align-items: center;
+}
+
+.topbarIconsItem{
+    margin-right: 15px;
+    cursor: pointer;
+    position: relative;
+}
+.topbarChat{
+    color: white;
+}
+.topbarIconBadge{
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    border-radius: 50%;
+    color: white;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+}
+
+.topbarImg{
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
